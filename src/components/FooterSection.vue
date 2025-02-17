@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
 .footer {
-  background-color: rgb(18, 85, 83);
+  background-color: rgb(183, 85, 83);
   padding: 2rem;
   color: white;
 }

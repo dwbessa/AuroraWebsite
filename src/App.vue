@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <NavBar />
+  <div class="app">
+    <NavBar @toggle-menu="toggleMenu" />
     <div class="main-content">
       <AboutSection />
       <LocationSection />
     </div>
-    <MenuSection />
+    <MenuSection :is-open="isMenuOpen" @close="closeMenu"/>
     <ReservationSection />
     <ContactSection />
     <FooterSection />
@@ -31,6 +31,19 @@ export default {
     ReservationSection,
     ContactSection,
     FooterSection
+  },
+  data() {
+    return {
+      isMenuOpen: false
+    }
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen
+    },
+    closeMenu() {
+      this.isMenuOpen = false
+    }
   }
 }
 </script>
