@@ -38,7 +38,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: rgb(183, 85, 83);
+  background-color: rgba(183, 85, 83, 0.9);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: fixed;
   top: 0;
@@ -116,7 +116,6 @@ export default {
   border-radius: 4px;
 }
 
-/* Optional: Close menu when clicking outside */
 @media (max-width: 768px) {
   .nav-links {
     width: 200px;

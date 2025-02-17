@@ -111,7 +111,6 @@ export default {
   color: #666;
 }
 
-/* Transition animations */
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease;

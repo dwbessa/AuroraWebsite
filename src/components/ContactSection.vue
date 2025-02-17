@@ -43,6 +43,8 @@
 </template>
 
 <script>
+import emailjs from '@emailjs/browser'
+
 export default {
   name: 'ContactSection',
   data() {
@@ -55,20 +57,33 @@ export default {
     }
   },
   methods: {
-    submitForm() {
-      // Here you can handle the form submission
-      console.log('Form Data:', this.formData)
-      // Reset form after submission
-      this.formData = {
-        name: '',
-        email: '',
-        message: ''
+    async submitForm() {
+          try {
+            const templateParams = {
+              from_name: this.formData.name,
+              reply_to: this.formData.email,
+              message: this.formData.message,
+            }
+            await emailjs.send(
+              process.env.VUE_APP_EMAILJS_SERVICE_ID,
+              process.env.VUE_APP_EMAILJS_TEMPLATE_ID,
+              templateParams,
+              process.env.VUE_APP_EMAILJS_PUBLIC_KEY
+            )
+
+            this.formData = {
+              name: '',
+              email: '',
+              message: ''
+            }
+            alert('Mensagem enviada com sucesso!')
+          } catch (error) {
+            console.error('Error:', error)
+            alert('Erro ao enviar mensagem. Tente novamente.')
+          }
+        }
       }
-      // You could add an alert or notification here
-      alert('Mensagem enviada com sucesso!')
     }
-  }
-}
 </script>
 
 <style scoped>
@@ -132,7 +147,6 @@ textarea {
   background-color: rgb(163, 65, 63);
 }
 
-/* Add responsive styles */
 @media (max-width: 600px) {
   .contact-form {
     padding: 0 1rem;
