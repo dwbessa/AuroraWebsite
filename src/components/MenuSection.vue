@@ -8,12 +8,12 @@
         </div>
         <div class="menu-content">
           <ul>
-            <li><b>Segunda: </b>Rabada</li>
-            <li><b>Terça: </b></li>
-            <li><b>Quarta: </b></li>
-            <li><b>Quinta: </b></li>
-            <li><b>Sexta: </b>Feijoada</li>
-            <li><b>Sábado: </b></li>
+            <li><b>Segunda:</b>Costela com Agrião</li>
+            <li><b>Terça:</b>Feijão Branco com Camarão</li>
+            <li><b>Quarta:</b>Frango à Parmegiana</li>
+            <li><b>Quinta:</b>Dobradinha</li>
+            <li><b>Sexta:</b>Feijoada</li>
+            <li><b>Sábado:</b>Rabada com Agrião</li>
           </ul>
         </div>
       </div>
@@ -109,6 +109,11 @@ export default {
 .menu-content li {
   margin-bottom: 1rem;
   color: #666;
+}
+
+.menu-content li b {
+  display: inline-block;
+  width: 100px;
 }
 
 .fade-enter-active,
