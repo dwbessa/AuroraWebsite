@@ -1,7 +1,7 @@
 # aurora-website
 
 ## Project website
-<a href=https://auroragourmet.com.br target=_blank>Visit the Website</a>
+<a href=https://auroragourmet.com.br target="_blank">Visit the Website</a>
 
 ## Project setup
 ```
