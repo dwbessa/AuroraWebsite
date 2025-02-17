@@ -1,5 +1,7 @@
 # aurora-website
 
+### Aurora Gourmet is a restaurant based in São Gonçalo, RJ.
+
 ## Project website
 <a href="https://auroragourmet.com.br" target="_blank" rel="noopener noreferrer">Visit the Website</a>
 
