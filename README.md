@@ -1,5 +1,8 @@
 # aurora-website
 
+## Project website
+[Visit the website](https://auroragourmet.com.br)
+
 ## Project setup
 ```
 npm install
