@@ -10,7 +10,6 @@
       </button>
       <div class="nav-links" :class="{ 'nav-active': isNavOpen }">
         <a href="#" @click.prevent="$emit('toggle-menu'); toggleNav()">Menu</a>
-        <a href="#reservas" @click="toggleNav">Reservas</a>
         <a href="#contato" @click="toggleNav">Contato</a>
       </div>
     </div>

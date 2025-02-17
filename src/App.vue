@@ -6,7 +6,6 @@
       <LocationSection />
     </div>
     <MenuSection :is-open="isMenuOpen" @close="closeMenu"/>
-    <ReservationSection />
     <ContactSection />
     <FooterSection />
   </div>
@@ -17,7 +16,6 @@ import NavBar from './components/NavBar.vue'
 import AboutSection from './components/AboutSection.vue'
 import LocationSection from './components/LocationSection.vue'
 import FooterSection from './components/FooterSection.vue'
-import ReservationSection from './components/ReservationSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import MenuSection from './components/MenuSection.vue'
 
@@ -28,7 +26,6 @@ export default {
     AboutSection,
     LocationSection,
     MenuSection,
-    ReservationSection,
     ContactSection,
     FooterSection
   },

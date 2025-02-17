@@ -2,13 +2,16 @@
   <footer class="footer">
     <div class="contact-links">
       <a href="tel:+5521970084783" class="contact-item">
-        📞 Contato
+        <span class="icon"><i class="fas fa-phone icon"></i></span>
+        <span class="text">Contato</span>
       </a>
       <a href="https://instagram.com/gourmetaurora" target="_blank" class="contact-item">
-        📷 Instagram
+        <span class="icon"><i class="fab fa-instagram"></i><br></span>
+        <span>Instagram</span>
       </a>
       <a href="mailto:auroragourmet128@gmail.com" class="contact-item">
-        📩 E-mail
+        <span class="icon"><i class="fas fa-envelope icon"></i></span>
+        <span>E-mail</span>
       </a>
     </div>
   </footer>
@@ -37,6 +40,18 @@ export default {
   color: white;
   text-decoration: none;
   transition: color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.text {
+  font-size: 1rem;
 }
 
 .contact-item:hover {
